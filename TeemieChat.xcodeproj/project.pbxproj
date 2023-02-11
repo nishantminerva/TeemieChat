@@ -9,21 +9,27 @@
 /* Begin PBXBuildFile section */
 		1972906A2997FF9C0019784E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197290692997FF9C0019784E /* AppDelegate.swift */; };
 		1972906C2997FF9C0019784E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972906B2997FF9C0019784E /* SceneDelegate.swift */; };
-		1972906E2997FF9C0019784E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972906D2997FF9C0019784E /* ViewController.swift */; };
-		197290712997FF9C0019784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1972906F2997FF9C0019784E /* Main.storyboard */; };
 		197290732997FF9F0019784E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197290722997FF9F0019784E /* Assets.xcassets */; };
 		197290762997FF9F0019784E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197290742997FF9F0019784E /* LaunchScreen.storyboard */; };
+		19729081299800010019784E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729080299800010019784E /* WelcomeViewController.swift */; };
+		19729083299800140019784E /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729082299800140019784E /* RegisterViewController.swift */; };
+		19729085299800250019784E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729084299800250019784E /* LoginViewController.swift */; };
+		19729087299800310019784E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729086299800310019784E /* ChatViewController.swift */; };
+		197290892998045B0019784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197290882998045B0019784E /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		197290662997FF9C0019784E /* TeemieChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeemieChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197290692997FF9C0019784E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1972906B2997FF9C0019784E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1972906D2997FF9C0019784E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		197290702997FF9C0019784E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		197290722997FF9F0019784E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		197290752997FF9F0019784E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		197290772997FF9F0019784E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19729080299800010019784E /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
+		19729082299800140019784E /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		19729084299800250019784E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		19729086299800310019784E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		197290882998045B0019784E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +64,40 @@
 			children = (
 				197290692997FF9C0019784E /* AppDelegate.swift */,
 				1972906B2997FF9C0019784E /* SceneDelegate.swift */,
-				1972906D2997FF9C0019784E /* ViewController.swift */,
-				1972906F2997FF9C0019784E /* Main.storyboard */,
+				1972907F2997FFCE0019784E /* Controllers */,
+				1972907E2997FFC50019784E /* Views */,
+				1972907D2997FFBC0019784E /* Models */,
 				197290722997FF9F0019784E /* Assets.xcassets */,
 				197290742997FF9F0019784E /* LaunchScreen.storyboard */,
 				197290772997FF9F0019784E /* Info.plist */,
 			);
 			path = TeemieChat;
+			sourceTree = "<group>";
+		};
+		1972907D2997FFBC0019784E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1972907E2997FFC50019784E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				197290882998045B0019784E /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1972907F2997FFCE0019784E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				19729080299800010019784E /* WelcomeViewController.swift */,
+				19729082299800140019784E /* RegisterViewController.swift */,
+				19729084299800250019784E /* LoginViewController.swift */,
+				19729086299800310019784E /* ChatViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +158,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				197290892998045B0019784E /* Main.storyboard in Resources */,
 				197290762997FF9F0019784E /* LaunchScreen.storyboard in Resources */,
 				197290732997FF9F0019784E /* Assets.xcassets in Resources */,
-				197290712997FF9C0019784E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +171,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1972906E2997FF9C0019784E /* ViewController.swift in Sources */,
+				19729085299800250019784E /* LoginViewController.swift in Sources */,
+				19729083299800140019784E /* RegisterViewController.swift in Sources */,
+				19729087299800310019784E /* ChatViewController.swift in Sources */,
+				19729081299800010019784E /* WelcomeViewController.swift in Sources */,
 				1972906A2997FF9C0019784E /* AppDelegate.swift in Sources */,
 				1972906C2997FF9C0019784E /* SceneDelegate.swift in Sources */,
 			);
@@ -147,14 +183,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1972906F2997FF9C0019784E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				197290702997FF9C0019784E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		197290742997FF9F0019784E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
