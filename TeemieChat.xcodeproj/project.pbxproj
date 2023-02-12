@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		194D56F3299853E60087296D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 194D56F2299853E60087296D /* GoogleService-Info.plist */; };
 		1972906A2997FF9C0019784E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 197290692997FF9C0019784E /* AppDelegate.swift */; };
 		1972906C2997FF9C0019784E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1972906B2997FF9C0019784E /* SceneDelegate.swift */; };
 		197290732997FF9F0019784E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 197290722997FF9F0019784E /* Assets.xcassets */; };
@@ -16,9 +17,13 @@
 		19729085299800250019784E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729084299800250019784E /* LoginViewController.swift */; };
 		19729087299800310019784E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729086299800310019784E /* ChatViewController.swift */; };
 		197290892998045B0019784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197290882998045B0019784E /* Main.storyboard */; };
+		19D68C5D2998D41D0039F5EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19D68C5C2998D41D0039F5EB /* FirebaseAuth */; };
+		19D68C5F2998D41D0039F5EB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 19D68C5E2998D41D0039F5EB /* FirebaseFirestore */; };
+		85BBC92E96EE21E39558A8EF /* Pods_TeemieChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11EACC2851EAC7BBD028A1E /* Pods_TeemieChat.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		194D56F2299853E60087296D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		197290662997FF9C0019784E /* TeemieChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TeemieChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		197290692997FF9C0019784E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1972906B2997FF9C0019784E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -30,6 +35,9 @@
 		19729084299800250019784E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		19729086299800310019784E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		197290882998045B0019784E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		5E6448C3F55065EBFA542DBF /* Pods-TeemieChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeemieChat.debug.xcconfig"; path = "Target Support Files/Pods-TeemieChat/Pods-TeemieChat.debug.xcconfig"; sourceTree = "<group>"; };
+		CDF5AFF354E3E93C66B1A21C /* Pods-TeemieChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeemieChat.release.xcconfig"; path = "Target Support Files/Pods-TeemieChat/Pods-TeemieChat.release.xcconfig"; sourceTree = "<group>"; };
+		E11EACC2851EAC7BBD028A1E /* Pods_TeemieChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeemieChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85BBC92E96EE21E39558A8EF /* Pods_TeemieChat.framework in Frameworks */,
+				19D68C5D2998D41D0039F5EB /* FirebaseAuth in Frameworks */,
+				19D68C5F2998D41D0039F5EB /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +59,8 @@
 			children = (
 				197290682997FF9C0019784E /* TeemieChat */,
 				197290672997FF9C0019784E /* Products */,
+				513D83F307AF74558F3944B2 /* Pods */,
+				CF2D9F762A8D15E941647E0A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +83,7 @@
 				197290722997FF9F0019784E /* Assets.xcassets */,
 				197290742997FF9F0019784E /* LaunchScreen.storyboard */,
 				197290772997FF9F0019784E /* Info.plist */,
+				194D56F2299853E60087296D /* GoogleService-Info.plist */,
 			);
 			path = TeemieChat;
 			sourceTree = "<group>";
@@ -100,6 +114,23 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
+		513D83F307AF74558F3944B2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E6448C3F55065EBFA542DBF /* Pods-TeemieChat.debug.xcconfig */,
+				CDF5AFF354E3E93C66B1A21C /* Pods-TeemieChat.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CF2D9F762A8D15E941647E0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E11EACC2851EAC7BBD028A1E /* Pods_TeemieChat.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -107,6 +138,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1972907A2997FF9F0019784E /* Build configuration list for PBXNativeTarget "TeemieChat" */;
 			buildPhases = (
+				8A5D271656938BE29B5E6FA8 /* [CP] Check Pods Manifest.lock */,
 				197290622997FF9C0019784E /* Sources */,
 				197290632997FF9C0019784E /* Frameworks */,
 				197290642997FF9C0019784E /* Resources */,
@@ -116,6 +148,10 @@
 			dependencies = (
 			);
 			name = TeemieChat;
+			packageProductDependencies = (
+				19D68C5C2998D41D0039F5EB /* FirebaseAuth */,
+				19D68C5E2998D41D0039F5EB /* FirebaseFirestore */,
+			);
 			productName = TeemieChat;
 			productReference = 197290662997FF9C0019784E /* TeemieChat.app */;
 			productType = "com.apple.product-type.application";
@@ -144,6 +180,9 @@
 				Base,
 			);
 			mainGroup = 1972905D2997FF9C0019784E;
+			packageReferences = (
+				19D68C5B2998D41D0039F5EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 197290672997FF9C0019784E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -159,12 +198,38 @@
 			buildActionMask = 2147483647;
 			files = (
 				197290892998045B0019784E /* Main.storyboard in Resources */,
+				194D56F3299853E60087296D /* GoogleService-Info.plist in Resources */,
 				197290762997FF9F0019784E /* LaunchScreen.storyboard in Resources */,
 				197290732997FF9F0019784E /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8A5D271656938BE29B5E6FA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TeemieChat-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		197290622997FF9C0019784E /* Sources */ = {
@@ -310,6 +375,7 @@
 		};
 		1972907B2997FF9F0019784E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E6448C3F55065EBFA542DBF /* Pods-TeemieChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -322,6 +388,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -329,14 +396,18 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nishantminerva.TeemieChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		1972907C2997FF9F0019784E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF5AFF354E3E93C66B1A21C /* Pods-TeemieChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -349,6 +420,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -356,9 +428,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.nishantminerva.TeemieChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -384,6 +459,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		19D68C5B2998D41D0039F5EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		19D68C5C2998D41D0039F5EB /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19D68C5B2998D41D0039F5EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		19D68C5E2998D41D0039F5EB /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 19D68C5B2998D41D0039F5EB /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1972905E2997FF9C0019784E /* Project object */;
 }
