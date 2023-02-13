@@ -17,6 +17,8 @@
 		19729085299800250019784E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729084299800250019784E /* LoginViewController.swift */; };
 		19729087299800310019784E /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19729086299800310019784E /* ChatViewController.swift */; };
 		197290892998045B0019784E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 197290882998045B0019784E /* Main.storyboard */; };
+		19A579F8299A527F00529DA8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19A579F7299A527F00529DA8 /* Message.swift */; };
+		19C7EA9D2999FD0500F89549 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 19C7EA9C2999FD0500F89549 /* Constants.swift */; };
 		19D68C5D2998D41D0039F5EB /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 19D68C5C2998D41D0039F5EB /* FirebaseAuth */; };
 		19D68C5F2998D41D0039F5EB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 19D68C5E2998D41D0039F5EB /* FirebaseFirestore */; };
 		85BBC92E96EE21E39558A8EF /* Pods_TeemieChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E11EACC2851EAC7BBD028A1E /* Pods_TeemieChat.framework */; };
@@ -35,6 +37,8 @@
 		19729084299800250019784E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		19729086299800310019784E /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		197290882998045B0019784E /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		19A579F7299A527F00529DA8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		19C7EA9C2999FD0500F89549 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5E6448C3F55065EBFA542DBF /* Pods-TeemieChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeemieChat.debug.xcconfig"; path = "Target Support Files/Pods-TeemieChat/Pods-TeemieChat.debug.xcconfig"; sourceTree = "<group>"; };
 		CDF5AFF354E3E93C66B1A21C /* Pods-TeemieChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TeemieChat.release.xcconfig"; path = "Target Support Files/Pods-TeemieChat/Pods-TeemieChat.release.xcconfig"; sourceTree = "<group>"; };
 		E11EACC2851EAC7BBD028A1E /* Pods_TeemieChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TeemieChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -75,6 +79,7 @@
 		197290682997FF9C0019784E /* TeemieChat */ = {
 			isa = PBXGroup;
 			children = (
+				19C7EA9C2999FD0500F89549 /* Constants.swift */,
 				197290692997FF9C0019784E /* AppDelegate.swift */,
 				1972906B2997FF9C0019784E /* SceneDelegate.swift */,
 				1972907F2997FFCE0019784E /* Controllers */,
@@ -91,6 +96,7 @@
 		1972907D2997FFBC0019784E /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				19A579F7299A527F00529DA8 /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -240,6 +246,8 @@
 				19729083299800140019784E /* RegisterViewController.swift in Sources */,
 				19729087299800310019784E /* ChatViewController.swift in Sources */,
 				19729081299800010019784E /* WelcomeViewController.swift in Sources */,
+				19C7EA9D2999FD0500F89549 /* Constants.swift in Sources */,
+				19A579F8299A527F00529DA8 /* Message.swift in Sources */,
 				1972906A2997FF9C0019784E /* AppDelegate.swift in Sources */,
 				1972906C2997FF9C0019784E /* SceneDelegate.swift in Sources */,
 			);
